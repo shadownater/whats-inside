@@ -106,3 +106,4 @@ venv.bak/
 #added stuff by me
 myenv/*
 whatsInside/.vscode/*
+env3/*
