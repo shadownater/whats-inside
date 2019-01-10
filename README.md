@@ -3,10 +3,15 @@ A project to practice (hopefully) a lot of technologies such as Django, DRF, Ang
 
 ## Running on WSL
 
-At root of project, run source env3/bin/activate, enabling the virtual environment. If you're not me for some reason, you'll need to run pip install -r requirements.txt.
+At root of project, run source env3/bin/activate, enabling the virtual environment. If you're not me for some reason, you'll need to run `pip install -r requirements.txt.`
 
-Locally boot up the site using python manage.py runserver.
+Control the postgres database using `sudo /etc/init.d/postgresql [restart/start/stop]`
 
+
+Locally boot up the site using `python manage.py runserver.`
+
+
+**Note: systemctl is not working on WSL as of yet, making use of gunicorn sockets kinda tough.** See [here](https://github.com/Microsoft/WSL/issues/2209).
 
 
 ## Running on Windows pre-Creator's update
