@@ -13,12 +13,17 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url
+from django.conf.urls import url, include
+from django.urls import path
 from django.contrib import admin
-from django.conf.urls import include
+
+#learned new thing: path is a newer function introduced meant to simplify the url matching
+#for the human eye. You can still do regex things with it. re_path() is the same as url()
+#url is on the chopping block for deprecation so watch out!
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api-auth/', include('rest_framework.urls')),
-    url(r'^$', admin.site.urls) #tmp, will point to angular instead
+    path('', include('todos.urls'))
+    #url(r'^$', admin.site.urls) #tmp, will point to angular instead
 ]

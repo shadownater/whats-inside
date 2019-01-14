@@ -14,3 +14,6 @@ class Todo(models.Model):
     isComplete = models.BooleanField(default=False)
     currentDate = models.DateField(auto_now=True)
     finishBy = models.DateTimeField(default=(datetime.date.today() + datetime.timedelta(days=1)) )
+
+    def __str__(self):
+        return self.description
