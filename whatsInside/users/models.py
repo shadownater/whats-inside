@@ -3,6 +3,7 @@ from __future__ import unicode_literals
 from django.contrib.auth.models import AbstractUser
 
 from django.db import models
+import uuid
 
 class CustomUser(AbstractUser):
     # add additional fields in here
