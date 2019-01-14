@@ -6,6 +6,7 @@ from django.db import models
 
 class CustomUser(AbstractUser):
     # add additional fields in here
+    email = models.CharField(max_length=256)
 
     def __str__(self):
         return self.email
