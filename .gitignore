@@ -109,3 +109,49 @@ whatsInside/.vscode/*
 env3/*
 whatsInside/todos/migrations/
 whatsInside/users/migrations/
+
+# Angular ignores
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/angular-inside/dist
+/angular-inside/tmp
+/angular-inside/out-tsc
+
+# dependencies
+/angular-inside/node_modules
+
+# profiling files
+/angular-inside/chrome-profiler-events.json
+/angular-inside/speed-measure-plugin.json
+
+# IDEs and editors
+/angular-inside/.idea
+/angular-inside/.project
+/angular-inside/.classpath
+/angular-inside/.c9/
+/angular-inside/*.launch
+/angular-inside/.settings/
+/angular-inside/*.sublime-workspace
+
+# IDE - VSCode
+/angular-inside/.vscode/*
+/angular-inside/!.vscode/settings.json
+/angular-inside/!.vscode/tasks.json
+/angular-inside/!.vscode/launch.json
+/angular-inside/!.vscode/extensions.json
+/angular-inside/.history/*
+
+# misc
+/angular-inside/.sass-cache
+/angular-inside/connect.lock
+/angular-inside/coverage
+/angular-inside/libpeerconnection.log
+/angular-inside/npm-debug.log
+/angular-inside/yarn-error.log
+/angular-inside/testem.log
+/angular-inside/typings
+
+# System Files
+/angular-inside/.DS_Store
+/angular-inside/Thumbs.db
